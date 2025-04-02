@@ -1,4 +1,4 @@
-build:
+build: main.c
 	mkdir -p build
 	gcc main.c -o build/main
 
