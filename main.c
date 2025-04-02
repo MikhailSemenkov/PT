@@ -11,6 +11,9 @@ int main() {
     
     FILE *fptr = NULL;
     fptr = fopen("input.txt", "r");
+    if (fptr == NULL) {
+        printf("Can not find file input.txt");
+    }
     char string[50] = "HELLO";
     fgets(string, sizeof(string), fptr);
     printf("%s\n", string);
