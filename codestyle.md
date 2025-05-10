@@ -151,6 +151,16 @@ for (int i \= 0; i \< LIMIT; i++)
     }  
 }
 
+Notice how:
+
+8.1.1) Each curly brace is on its own line;
+
+8.1.2) There's a single space after for;
+
+8.1.3) There isn't any space immediately after the ( or immediately before the ); and
+
+8.1.4) The loop's body (a comment in this case) is indented with 4 spaces.
+
 #### **8.2) while**
 
 Declare \`while\` loops as follows:
@@ -190,6 +200,11 @@ Notice how:
 
 8.3.4) The loop's body (a comment in this case) is indented with 4 spaces.
 
+### **8.4) Conditions
+8.4.1) There are single spaces around all operators and one after each ';';
+
+8.4.2) There are one space after eqch ';' symbol;
+
 ### **9\) Pointers**
 
 When declaring a pointer, write the \`\*\` next to the variable, as in:
@@ -227,6 +242,8 @@ int n;
 Don't declare pointers on the same line as non-pointers, as in:
 
 int \*p, n;
+
+10.5) Every operation symbol, as =, +, -, *, / shall be surrounded by one space before and after;
 
 ### **11\) Structures**
 
