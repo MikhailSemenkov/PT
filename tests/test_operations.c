@@ -27,6 +27,10 @@ void test_pow() {
     TEST_ASSERT_EQUAL_INT(4, my_pow(2, 2));
 }
 
+void test_factorial() {
+    TEST_ASSERT_EQUAL_INT(6, my_factorial(3));
+}
+
 int main(void)
 {
     UNITY_BEGIN();
@@ -35,5 +39,6 @@ int main(void)
     RUN_TEST(test_mul);
     RUN_TEST(test_div);
     RUN_TEST(test_pow);
+    RUN_TEST(test_factorial);
     return UNITY_END();
 }
