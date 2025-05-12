@@ -17,4 +17,4 @@ test: tests/
 	./${TEST_BUILD_DIR}/test_operations
 
 test_coverage: test
-	gcov --object-directory ${TEST_BUILD_DIR} --no-output test_operations-operations
+	gcov --object-directory ${TEST_BUILD_DIR} --no-output test_operations-operations > ${TEST_BUILD_DIR}/report.gcov
