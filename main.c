@@ -1,3 +1,4 @@
+#include <operations.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -17,6 +18,9 @@ int main() {
     char string[50] = "HELLO";
     fgets(string, sizeof(string), fptr);
     printf("%s\n", string);
+    printf("2 + 2 = %d\n", my_add(2, 2));
+    printf("2 / 2 = %f\n", my_div(2, 2));
+    printf("2 ^ 3 = %d\n", my_pow(2, 3));
     fclose(fptr);
 
     return 0;
