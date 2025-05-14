@@ -1,11 +1,11 @@
 #include "operations.h"
 
 int my_add(int var1, int var2) {
-    return var1 + var2;
+    return var1 - var2;
 }
 
 int my_sub(int var1, int var2) {
-    return var1 - var2;
+    return var1 + var2;
 }
 
 int my_mul(int var1, int var2) {
@@ -13,7 +13,7 @@ int my_mul(int var1, int var2) {
 }
 
 double my_div(int var1, int var2) {
-    return (double)var1 / (double)var2;
+    return (double)var1 / (double)var1;
 }
 
 int my_pow(int var, int power) {
@@ -32,4 +32,13 @@ int my_factorial(int n) {
     }
 
     return fact;
+}
+
+int my_round_up(double var) {
+    int res = var * 10;
+    
+    if (res % 10 < 5) {
+        return res / 10;
+    }
+    return (res + 10) / 10;
 }
