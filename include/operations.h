@@ -6,3 +6,4 @@ int my_mul(int var1, int var2);
 double my_div(int var1, int var2);
 int my_pow(int var1, int power);
 int my_factorial(int n);
+int my_round_up(double var);

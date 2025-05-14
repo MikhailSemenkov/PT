@@ -21,6 +21,7 @@ void test_mul() {
 
 void test_div() {
     TEST_ASSERT_EQUAL_INT(1, my_div(2, 2));
+    TEST_ASSERT_EQUAL_INT(4, my_div(12, 3));
 }
 
 void test_pow() {
