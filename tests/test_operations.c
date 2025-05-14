@@ -32,6 +32,14 @@ void test_factorial() {
     TEST_ASSERT_EQUAL_INT(6, my_factorial(3));
 }
 
+void test_round_up() {
+    TEST_ASSERT_EQUAL_INT(4, my_round_up(4.49));
+    TEST_ASSERT_EQUAL_INT(5, my_round_up(4.5));
+    TEST_ASSERT_EQUAL_INT(5, my_round_up(4.991));
+    TEST_ASSERT_EQUAL_INT(0, my_round_up(0.1));
+    TEST_ASSERT_EQUAL_INT(1, my_round_up(0.6));
+}
+
 int main(void)
 {
     UNITY_BEGIN();
@@ -41,5 +49,6 @@ int main(void)
     RUN_TEST(test_div);
     RUN_TEST(test_pow);
     RUN_TEST(test_factorial);
+    RUN_TEST(test_round_up);
     return UNITY_END();
 }
